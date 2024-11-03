@@ -11,6 +11,7 @@ conda activate adenoid
 pip install -r requirements.txt
 ```
 **Data preparation**
+
 Since the collected images contain a lot of background information, we need to process the data using retinaface model.
 
 Here are the pre-trained model download link: [Google Drive](https://drive.google.com/file/d/1LLZ2BcPWgeScCjJblN6WIPruyG3vsnfa/view?usp=sharing). Save it to ```retinaface/weights/```.
@@ -52,6 +53,7 @@ To facilitate model training, we recommend building a folder structure like this
 |       ├──...
 ```
 **Single-degree model training**
+
 We pre-trained a face recognition model on the FaceForensics++ dataset and used the model weights as initialization to fine-tune our single-degree model.
 
 Here are the pre-trained model download link: [Google Drive](https://drive.google.com/file/d/1Vs-H6Z3wcFGuxQv1eqnOJGl020gdQ4ub/view?usp=sharing). Save it to ```effnet/pretrain_weight/```.
@@ -64,12 +66,14 @@ python train_single.py --data_path ../data --epoch 200 --batch_size 8 --degree [
 Finally, we get the single degree model with five-fold cross validation.
 
 **Multi-degree model training**
+
 We can run the following codes to train the multi-degree model:
 ```
 python train_multi.py --data_path ../data --epoch 200 --batch_size 8
 ```
 
 **Multi-degree model validation**
+
 Validation is divided into internal validation and external validation.
 
 For the internal validation, run:
