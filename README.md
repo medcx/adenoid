@@ -25,14 +25,12 @@ To facilitate model training, we recommend building a folder structure like this
 |          └── 1_degree.jpg
 |          └── 2_degree.jpg
 |       ├──sample_2
+|          └── ...
 |       ├──...
 |   
 │   ├── test
 |       ├──sample_1
-|          └── 0_degree.jpg
-|          └── 1_degree.jpg
-|          └── 2_degree.jpg
-|       ├──sample_2
+|          └── ...
 |       ├──...
 |
 ├── disease
@@ -42,13 +40,11 @@ To facilitate model training, we recommend building a folder structure like this
 |          └── 1_degree.jpg
 |          └── 2_degree.jpg
 |       ├──sample_2
+|          └── ...
 |       ├──...
 |   
 │   ├── test
 |       ├──sample_1
-|          └── 0_degree.jpg
-|          └── 1_degree.jpg
-|          └── 2_degree.jpg
-|       ├──sample_2
+|          └── ...
 |       ├──...
 ```
