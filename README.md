@@ -58,7 +58,7 @@ We pre-trained a face recognition model on the FaceForensics++ dataset and used 
 
 Here are the pre-trained model download link: [Google Drive](https://drive.google.com/file/d/1Vs-H6Z3wcFGuxQv1eqnOJGl020gdQ4ub/view?usp=sharing). Save it to ```effnet/pretrain_weight/```.
 
-Now, all preparations are ready, we can run the following codes to fine-tuning the single-degree model:
+Now, all preparations are ready, we can run the following codes to fine-tune the single-degree model:
 ```
 cd effnet
 python train_single.py --data_path ../data --epoch 200 --batch_size 8 --degree [chosen from (0, 1, 2)]
