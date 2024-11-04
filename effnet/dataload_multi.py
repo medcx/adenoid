@@ -26,9 +26,9 @@ class Patient_dataset(Dataset):
         patient = patient.replace('\\', '/')
         patient_id = patient.split('/')[-1]
         patient_type = patient.split('/')[-3].split('_')[0]
-        p_0 = f'../data/{patient_type}/train/{patient_id}/0_degree.jpg'
-        p_1 = f'../data/{patient_type}/train/{patient_id}/1_degree.jpg'
-        p_2 = f'../data/{patient_type}/train/{patient_id}/2_degree.jpg'
+        p_0 = f'../data/{patient_type}/train/{patient_id}/0_*.jpg'
+        p_1 = f'../data/{patient_type}/train/{patient_id}/1_*.jpg'
+        p_2 = f'../data/{patient_type}/train/{patient_id}/2_*.jpg'
         data_0 = glob.glob(p_0)
         random.shuffle(data_0)
         if len(data_0) == 0:
